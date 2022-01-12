@@ -1,4 +1,4 @@
-# CN334 #
+# CN334 & CN332 #
 Member <br />
 Thanyaporn Ng 6210742125 <br />
 Suyada sinanun 6210742133 <br />
