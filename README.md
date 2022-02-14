@@ -10,5 +10,4 @@ https://drive.google.com/drive/folders/1fW7ZZnu1DW09uEFSPPeZulYCaOkkBhSv?usp=sha
 ## Test case ##
 https://drive.google.com/drive/folders/1NHf4FzWi1pPRYHs9A3dSiHkJQJ6n7GlK?usp=sharing <br />
 
-## Mini Project -Web Portfolio- ##
-suyada's repo => 
+
