@@ -10,4 +10,8 @@ https://drive.google.com/drive/folders/1fW7ZZnu1DW09uEFSPPeZulYCaOkkBhSv?usp=sha
 ## Test case ##
 https://drive.google.com/drive/folders/1NHf4FzWi1pPRYHs9A3dSiHkJQJ6n7GlK?usp=sharing <br />
 
+#Portfolio Repo
+Thanyaporn Ngamsangeim
+https://github.com/Thanyaporn1234/portfolio_2125
+
 
