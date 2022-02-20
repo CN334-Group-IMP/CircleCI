@@ -12,6 +12,6 @@ https://drive.google.com/drive/folders/1NHf4FzWi1pPRYHs9A3dSiHkJQJ6n7GlK?usp=sha
 
 ## Portfolio Repo ##
 Thanyaporn Ngamsangeim
-https://github.com/Thanyaporn1234/portfolio_2125 <br />
+https://github.com/Thanyaporn1234/miniproject <br />
 
 
