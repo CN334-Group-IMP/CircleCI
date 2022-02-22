@@ -15,9 +15,14 @@
     </head>
     <style>
         .add{
-            background-color: white;
-            color: black;
-            border: 2px solid #B696FA;
+            background-color:rgb(224, 180, 98);
+            color:#FFFFFF;
+            text-shadow:2px 2px rgb(121, 18, 18);
+            margin-left: 800px;
+            line-height:200%; 
+            font-size: 20px;
+            font-family: cursive;
+            border-radius: 5px;
         }
     </style>
     <body>

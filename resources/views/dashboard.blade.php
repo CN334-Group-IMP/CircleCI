@@ -8,34 +8,43 @@
     <style>
         tbody {
             font-family: 'Nunito', sans-serif;
-            background-image: url("https://i.pinimg.com/564x/46/81/4b/46814b777e1d7c1d65a28e9c676371ea.jpg");
+            background-image: url("https://i.pinimg.com/564x/0b/11/a7/0b11a77631ec72c0376aeae39093eac9.jpg");
         }
         .py-12{
             background-image: url(" https://i.pinimg.com/564x/81/2b/d5/812bd598d26f2d4d2a9f3191f95432c7.jpg");
         }
         .header2{
+          background-color:rgb(224, 180, 98);
+          line-height:200%;
+          width :100%;
           margin:5px;
           font-family: cursive;
-          color:rgb(210,105,30);
-          font-size: 2em;
+          color: white;
+          font-size: 20px;
           font-weight:bold;
           text-shadow:3px 3px rgb(188, 143, 143);
+          border-radius: 5px;
         }
         
         img{
           border-radius: 50%;
           margin-left: 20px;
-          width:50px;
-          height:50px;
+          width:20px;
+          height:20px;
         }
         
         .addTask{
-          background-color: white;
-          color: black;
-          border: 2px solid #B696FA;
-          margin-left: 800px;
-          font-size:20px;
-          border-radius: 10%;
+          background-color:rgb(145, 3, 36);
+          line-height:200%;
+          width :100%;
+          margin:5px;
+          margin-left: 900px;
+          font-family: cursive;
+          color: white;
+          font-size: 17px;
+          font-weight:bold;
+          text-shadow:1px 1px rgb(188, 143, 143);
+          border-radius: 5px;
         }
 
         </style>
