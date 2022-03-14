@@ -18,6 +18,11 @@ jobs:
             sudo apt update
             sudo docker-php-ext-install zip
 
+      - run:
+          name: "Create Environment file"
+          command: |
+            mv .env.testing .env
+
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -35,24 +40,12 @@ jobs:
           paths:
             - ./vendor
 
-      # prepare the database
       - run:
-          name: "Create Environment file and generate app key"
-          command: |
-            mv .env.testing .env
-            php artisan key:generate
-
-      - run:
-          name: "Create database and run migration"
-          command: |
-            touch database/database.sqlite
-            php artisan migrate --env=testing
-
-      - run:
-          name: "Generate Passport encryption keys"
-          command: php artisan passport:install
+          name: "Generate App key"
+          command: php artisan key:generate
 
       # run tests with phpunit
       - run:
-          name: "Run Tests"
-          command: ./vendor/bin/phpunit
+          name: "Run Unit Tests"
+          command: ./vendor/bin/phpunit tests/Unit
+
