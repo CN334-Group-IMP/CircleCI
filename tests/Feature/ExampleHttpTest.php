@@ -20,10 +20,18 @@ class ExampleHttpTest extends TestCase
             'password_confirmation' => $password
         ]); 
 
-        $response
-            ->assertStatus(201)
-            ->assertExactJson([
+        
+        if($response->assertStatus(201))
+        {
+                $response->assertExactJson([
                 'message' => "Successfully created user!",
-            ]);
+            ]   );
+        }
+        elseif($response->assertStatus(404))
+        {
+                $response->assertExactJson([
+                'message' => "Error, controller or response do not exist",
+            ]   );
+        }
     }
 }
