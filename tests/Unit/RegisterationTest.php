@@ -7,7 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
 
-class ExampleTest extends TestCase
+class RegisterationTest extends TestCase
 {
     public function testUserCreation()
     {
