@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterationTest extends TestCase
 {
@@ -12,7 +13,7 @@ class RegisterationTest extends TestCase
         $user = new User([
             'name' => "Test User",
             'email' => "test@mail.com",
-            'password' => bcrypt("testpassword")
+            'password' => "testpassword"
         ]);   
 
         $this->assertEquals('Test User', $user->name);
