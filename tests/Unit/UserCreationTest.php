@@ -9,17 +9,6 @@ use Illuminate\Support\Facades\Hash;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-
-    public function testBasicTest()
-    {
-        $this->assertTrue(true);
-    }
-
     public function testUserCreation()
     {
         $user = new User([
