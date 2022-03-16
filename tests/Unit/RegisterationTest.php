@@ -4,8 +4,6 @@ namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 use App\Models\User;
-use Illuminate\Support\Facades\Hash;
-
 
 class RegisterationTest extends TestCase
 {
