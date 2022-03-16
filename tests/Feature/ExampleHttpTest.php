@@ -9,8 +9,8 @@ class ExampleHttpTest extends TestCase
 {
     public function testUserCreationEndpointTest()
     {
-        $name = "neoarmstrongcyclonejetarmstrong";
-        $email = "test@example.com";
+        $name = $this->faker->name();
+        $email = $this->faker->email();
         $password = "mypassword";
 
         $response = $this->postJson('/api/createuser', [
