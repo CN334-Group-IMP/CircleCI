@@ -7,7 +7,7 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    public function createuser(Request $request)
+    public function createUser(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required',
