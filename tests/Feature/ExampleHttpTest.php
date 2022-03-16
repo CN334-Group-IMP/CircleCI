@@ -4,12 +4,13 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 
+
 class ExampleHttpTest extends TestCase
 {
     public function testUserCreationEndpointTest()
     {
-        $name = $this->faker->name();
-        $email = $this->faker->email();
+        $name = "neoarmstrongcyclonejetarmstrong";
+        $email = "test@example.com";
         $password = "mypassword";
 
         $response = $this->postJson('/api/createuser', [
