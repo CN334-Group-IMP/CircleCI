@@ -11,7 +11,7 @@ class TaskTest extends TestCase{
     public function test_schema_description()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => 'bebe weight training',
         ]);
 
@@ -22,7 +22,7 @@ class TaskTest extends TestCase{
     public function test_schema_user_id()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => 'bebe weight training',
         ]);
 
@@ -34,7 +34,7 @@ class TaskTest extends TestCase{
     public function test_blank_description()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => '',
         ]);
 
@@ -45,7 +45,7 @@ class TaskTest extends TestCase{
     public function test_in_thai_description()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => 'ออกกำลังกายตามคลิปเบเบ้',
         ]);
 
@@ -56,7 +56,7 @@ class TaskTest extends TestCase{
     public function test_in_eng_description()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => 'Choreograph Sun Roof by Nicky Youre',
         ]);
 
@@ -67,18 +67,18 @@ class TaskTest extends TestCase{
     public function test_in_num_description()
     {
         $task = new Task([
-            'user_id' => '1',
-            'description' => '01234567899876543210',
+            'user_id' => 1,
+            'description' => '1234567899876543210' ,
         ]);
 
-        $this -> assertEquals('01234567899876543210', $task->description); 
+        $this -> assertEquals( '1234567899876543210' , $task->description); 
     }
 
     //ทดสอบ description ว่าใส่ตัวอักษรพิเศษได้มั้ย
     public function test_in_special_description()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => '@#$%&*_=+-/|><[]{}!~',
         ]);
 
@@ -90,7 +90,7 @@ class TaskTest extends TestCase{
     {
         $descrip = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%&*_=+-/|><[]{}!~กขฃคฅฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรลวศษสหฬอฮอะอาอิอีอุอูเอแอไอโอใอๆ';
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => $descrip,
         ]);
 
@@ -157,7 +157,7 @@ class TaskTest extends TestCase{
     public function test_null_description()
     {
         $task = new Task([
-            'user_id' => '1',
+            'user_id' => 1,
             'description' => null,
         ]);
 
