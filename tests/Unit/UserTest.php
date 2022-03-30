@@ -144,11 +144,11 @@ class UserTest extends TestCase{
     {
         $user = new User([
             'name' => 'jake',
-            'email' => 'jake@mail.com',
-            'password' => '@#$%jakepassword0123กขฃคฅ',
+            'email' => '0123456789@mail.com',
+            'password' => 'jakepassword',
         ]);   
 
-        $this->assertEquals('@#$%jakepassword0123กขฃคฅ', $user->email);
+        $this->assertEquals('0123456789@mail.com', $user->email);
     }
 
     //ทดสอบว่า email ไม่มี @ ได้หรือไม่
@@ -157,7 +157,7 @@ class UserTest extends TestCase{
         $user = new User([
             'name' => 'jake',
             'email' => 'jakemail.com',
-            'password' => '@#$%jakepassword0123กขฃคฅ',
+            'password' => 'jakepassword',
         ]);   
 
         $this->assertEquals('jakemail.com', $user->email,'email value incorrect : no @ found');
