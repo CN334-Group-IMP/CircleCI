@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use App\Models\Task;
+use App\Models\User;
 
 class TestdbSeeder extends Seeder
 {
@@ -15,14 +16,70 @@ class TestdbSeeder extends Seeder
      */
     public function run()
     {
-        /**DB::table('tasks')->insert([
-            'task name' => 'task1',
-            'task description' => 'task1 test',
-        ]);*/
+        User::create([
+            'id' => '1',
+            'name' => 'jhon',
+            'email' => 'jhon@email.com',
+            'password' => '12345'
+        ]);
+
+        User::create([
+            'id' => '2',
+            'name' => 'jane',
+            'email' => 'jane@email.com',
+            'password' => '67890'
+        ]);
+
+        User::create([
+            'id' => '3',
+            'name' => 'justin',
+            'email' => 'justin@email.com',
+            'password' => '13579'
+        ]);
 
         Task::create([
-                'description' => 'task1 test',
-                'user_id' => '1'
+            'description' => 'task1 test',
+            'user_id' => '1'
+        ]);
+
+        Task::create([
+            'description' => 'task2 test',
+            'user_id' => '1'
+        ]);
+
+        Task::create([
+            'description' => 'task3 test',
+            'user_id' => '1'
+        ]);
+
+        Task::create([
+            'description' => 'task1 test',
+            'user_id' => '2'
+        ]);
+
+        Task::create([
+            'description' => 'task2 test',
+            'user_id' => '2'
+        ]);
+
+        Task::create([
+            'description' => 'task3 test',
+            'user_id' => '2'
+        ]);
+
+        Task::create([
+            'description' => 'task1 test',
+            'user_id' => '3'
+        ]);
+
+        Task::create([
+            'description' => 'task2 test',
+            'user_id' => '3'
+        ]);
+
+        Task::create([
+            'description' => 'task3 test',
+            'user_id' => '3'
         ]);
     }
 }
