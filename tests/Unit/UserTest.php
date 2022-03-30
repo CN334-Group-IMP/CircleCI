@@ -100,7 +100,7 @@ class UserTest extends TestCase{
             'password' => '0123456789',
         ]);   
 
-        $this->assertEquals('0123456789', $user->name);
+        $this->assertEquals('0123456789', $user->password);
     }
 
     //ทดสอบว่า password เป็นภาษาไทยได้หรือไม่
@@ -148,7 +148,7 @@ class UserTest extends TestCase{
             'password' => '@#$%jakepassword0123กขฃคฅ',
         ]);   
 
-        $this->assertEquals('@#$%jakepassword0123กขฃคฅ', $user->password);
+        $this->assertEquals('@#$%jakepassword0123กขฃคฅ', $user->email);
     }
 
     //ทดสอบว่า email ไม่มี @ ได้หรือไม่
